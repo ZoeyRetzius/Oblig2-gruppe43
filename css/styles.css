@@ -1,0 +1,37 @@
+/* Oppsett som ligner en avisartikkel */
+body {
+    max-width: 800px; /* Begrenser bredden for å etterligne avisoppsett */
+    margin: 0 auto; /* Sentrerer innholdet */
+    padding: 20px;
+  }
+  
+  /* Hovedtittel (som en avisoverskrift) */
+  h1 {
+    font-size: 2.5em; /* Større skrift for hovedtittelen */
+    background-color: red; /* Rød bakgrunnsfarge for hovedtittelen */
+    color: white; /* Hvit tekst for kontrast */
+    padding: 10px; /* Ekstra padding for å skille innholdet */
+  }
+  
+  /* Undertittel (som en underoverskrift i en avis) */
+  h2 {
+    font-size: 1.8em; /* Mindre skrift for undertittelen */
+    background-color: #f9f9f9; /* Grå bakgrunnsfarge for undertittelen */
+    padding: 10px; /* Ekstra padding for å skille innholdet */
+  }
+  
+  /* Teksten (som avisartikkelens innhold) */
+  p {
+    font-size: 1.2em; /* Skriftstørrelse for teksten */
+    line-height: 1.6; /* Linjehøyde for bedre lesbarhet */
+    margin-bottom: 20px; /* Avstand mellom avsnittene */
+  }
+  
+  /* Bilde i artikkelen */
+  img {
+    display: block; /* Sørger for at bildet har en egen linje */
+    max-width: 100%; /* Bilder skal ikke overstige foreldreelementets bredde */
+    height: auto; /* Beholder bildets proporsjoner */
+    margin-bottom: 20px; /* Avstand til neste element */
+  }
+  
