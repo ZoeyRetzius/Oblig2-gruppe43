@@ -3,6 +3,7 @@ body {
     max-width: 800px; /* Begrenser bredden for å etterligne avisoppsett */
     margin: 0 auto; /* Sentrerer innholdet */
     padding: 20px;
+    font-family: Arial, sans-serif;
   }
   
   /* Hovedtittel (som en avisoverskrift) */
@@ -11,18 +12,20 @@ body {
     background-color: red; /* Rød bakgrunnsfarge for hovedtittelen */
     color: white; /* Hvit tekst for kontrast */
     padding: 10px; /* Ekstra padding for å skille innholdet */
-  }
-  
+    border-radius: 10px;
+}
+
   /* Undertittel (som en underoverskrift i en avis) */
   h2 {
-    font-size: 1.8em; /* Mindre skrift for undertittelen */
+    font-size: 1.5em; /* Mindre skrift for undertittelen */
     background-color: #9b9b9b; /* Grå bakgrunnsfarge for undertittelen */
     padding: 10px; /* Ekstra padding for å skille innholdet */
-  }
+    border-radius: 10px;
+}
   
   /* Teksten (som avisartikkelens innhold) */
   p {
-    font-size: 1.2em; /* Skriftstørrelse for teksten */
+    font-size: 1.0em; /* Skriftstørrelse for teksten */
     line-height: 1.6; /* Linjehøyde for bedre lesbarhet */
     margin-bottom: 20px; /* Avstand mellom avsnittene */
   }
@@ -31,6 +34,20 @@ body {
     font-style: italic;
     color: #666; /* Grå farge for meta-informasjon */
   }
+
+  .ramme {
+    border: 2px solid #a9a7a7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
   
   /* Stil for deltakerboksen */
 .deltaker-boks {
@@ -41,6 +58,11 @@ body {
   }
   .deltaker-boks h4 {
     font-size: 1.2em;
+    background-color: #9b9b9b;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
   }
   
   /* Stil for deltakernavn */
@@ -52,12 +74,6 @@ body {
   .deltaker-email {
     font-style: italic;
   }
-
-  .ramme {
-    border: 2px solid #a9a7a7; /* Tynn ramme med grå farge */
-    padding: 20px; /* Ekstra plass innenfor rammen for å gjøre det pent */
-    margin: 20px; /* Margin for å gi litt avstand fra kanten av siden */
-  }
   
 
   /* Stil for h4 (Deltakere) */
@@ -68,14 +84,3 @@ h4 {
     margin-top: 20px;
     display: inline-block;
   }
-  
-  
-  
-  /* Bilde i artikkelen */
-  img {
-    display: block; /* Sørger for at bildet har en egen linje */
-    max-width: 100%; /* Bilder skal ikke overstige foreldreelementets bredde */
-    height: auto; /* Beholder bildets proporsjoner */
-    margin-bottom: 20px; /* Avstand til neste element */
-  }
-  
