@@ -1,27 +1,41 @@
 /* Oppsett som ligner en avisartikkel */
 body {
     max-width: 800px; /* Begrenser bredden for å etterligne avisoppsett */
-    margin: 0 auto; /* Sentrerer innholdet */
+ 
     padding: 20px;
     font-family: Arial, sans-serif;
   }
   
-  /* Hovedtittel (som en avisoverskrift) */
-  h1 {
-    font-size: 2.5em; /* Større skrift for hovedtittelen */
-    background-color: red; /* Rød bakgrunnsfarge for hovedtittelen */
-    color: white; /* Hvit tekst for kontrast */
-    padding: 10px; /* Ekstra padding for å skille innholdet */
-    border-radius: 10px;
+
+#h1-page1 {
+  font-size: 2.5em;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-  /* Undertittel (som en underoverskrift i en avis) */
-  h2 {
-    font-size: 1.5em; /* Mindre skrift for undertittelen */
-    background-color: #9b9b9b; /* Grå bakgrunnsfarge for undertittelen */
-    padding: 10px; /* Ekstra padding for å skille innholdet */
-    border-radius: 10px;
+#h2-page1 {
+  font-size: 1.5em;
+  background-color: rgb(153, 150, 150);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.nav-bar {
+  background-color: #cf6e36;
+  padding: 10px;
+  text-align: center; /* Aligns the links to the center */
+}
+
+.nav-text {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin: 0 10px; /* Adds some space between the links */
+}
+
   
   /* Teksten (som avisartikkelens innhold) */
   p {
@@ -35,12 +49,7 @@ body {
     color: #666; /* Grå farge for meta-informasjon */
   }
 
-  .ramme {
-    border: 2px solid #a9a7a7;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-}
+
 
 .secondbox {
   background-image: url("../css/image.png");
@@ -56,50 +65,8 @@ img {
     height: auto;
     margin-bottom: 20px;
 }
-  
-  /* Stil for deltakerboksen */
-.deltaker-boks {
-    border: 4px solid #f70202;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  .deltaker-boks h4 {
-    font-size: 1.2em;
-    background-color: #9b9b9b;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 20px;
-  }
+ 
 
-  .boks-test h3 {
-    font-size: 1.2em;
-    background-color: #9b9b9b;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top: 20px;
-  }
-  
-  /* Stil for deltakernavn */
-  .deltaker-navn {
-    font-weight: bold;
-  }
-  
-  /* Stil for deltaker-e-post */
-  .deltaker-email {
-    font-style: italic;
-  }
-  
 
-  /* Stil for h4 (Deltakere) */
-h4 {
-    background-color: #9b9b9b;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    display: inline-block;
-  }
 
   
