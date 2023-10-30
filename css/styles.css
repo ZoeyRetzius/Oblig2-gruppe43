@@ -1,72 +1,67 @@
 /* Oppsett som ligner en avisartikkel */
 body {
-    max-width: 800px; /* Begrenser bredden for å etterligne avisoppsett */
- 
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-
-#h1-page1 {
-  font-size: 2.5em;
-  background-color: red;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
+  max-width: 800px; /* Begrenser bredden for å etterligne avisoppsett */
+  margin: 0 auto; /* Sentrerer elementet horisontalt */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-#h2-page1 {
-  font-size: 1.5em;
-  background-color: rgb(153, 150, 150);
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
+#page-title {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #0000;
+  font-size: larger;
 }
 
-.nav-bar {
-  background-color: #cf6e36;
-  padding: 10px;
-  text-align: center; /* Aligns the links to the center */
+#forfatter-navn {
+  color: rgb(25, 58, 101)
 }
 
-.nav-text {
-  text-decoration: none;
-  color: #333;
-  padding: 10px;
-  margin: 0 10px; /* Adds some space between the links */
+/* Teksten (som avisartikkelens innhold) */
+p {
+  font-size: 1.0em; /* Skriftstørrelse for teksten */
+  line-height: 1.6; /* Linjehøyde for bedre lesbarhet */
+  margin-bottom: 20px; /* Avstand mellom avsnittene */
+  text-align: justify; /* Justerer teksten */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-  
-  /* Teksten (som avisartikkelens innhold) */
-  p {
-    font-size: 1.0em; /* Skriftstørrelse for teksten */
-    line-height: 1.6; /* Linjehøyde for bedre lesbarhet */
-    margin-bottom: 20px; /* Avstand mellom avsnittene */
-  }
-  
-  .article-meta {
-    font-style: italic;
-    color: #666; /* Grå farge for meta-informasjon */
-  }
-
-
-
-.secondbox {
-  background-image: url("../css/image.png");
-  background-size: cover;
-    width: 700px;
-    height: 700px;
-    font-size: 1.2em;
+.article-meta {
+  font-style: italic;
+  color: #666; /* Grå farge for meta-informasjon */
+  text-align: center; /* Sentrerer meta-informasjonen */
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+
+.bilde-class {
+  display: block;
+  max-width: 50%; /* Sørger for at bildet ikke overstiger sin opprinnelige størrelse */
+  height: auto; /* Forhindrer forvrengning av bildet */
+  margin: 10px auto; /* Sentrerer bildet og legger til litt plassering over og under bildet */
 }
- 
+ img{
+  max-width: 800px;
+ }
 
+nav {
+  background-color: #dd952f;
+  width: 100%;
+}
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
 
-  
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  color: #0000;
+  font-weight: bold;
+}
+
+nav a.hover {
+  color: #ffcc00;
+}
